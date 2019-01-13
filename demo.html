@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>0g-typeahead Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+<link rel="stylesheet" href="0g-typeahead.css">
+
+<style>
+	*, *:before, *:after {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: arial;
+		text-align: center;
+		font-size: 22px;
+		padding-top: 5%;
+	}
+	input {
+		width: 300px;
+		padding: 8px;
+		font-size: 22px;
+	}
+	p {
+		padding-top   : 20px;
+		padding-bottom: 20px;
+	}
+</style>
+
+<h1>0g-typeahead demo</h1>
+<p>Start typing the name of a country into the input field. It will be
+autocompleted.</p>
+
+Country:
+<input name=country type=text>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="demo-data.js"></script>
+<script src="0g-typeahead.js"></script>
+
+<script>
+	$('input[name=country]').typeahead({source:  keyPress});
+
+	function keyPress(query,process)
+	{
+		process(countries);
+	}	
+</script>
+
+</body>
+</html>
