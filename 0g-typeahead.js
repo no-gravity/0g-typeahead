@@ -208,11 +208,13 @@
           break
 
         case 38: // up arrow
+          if (e.shiftKey) return;
           e.preventDefault()
           this.prev()
           break
 
         case 40: // down arrow
+          if (e.shiftKey) return;
           e.preventDefault()
           this.next()
           break
