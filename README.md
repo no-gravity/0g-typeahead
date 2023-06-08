@@ -24,3 +24,4 @@ Currently it needs jQuery. This dependency should be removed at some point.
 
 <img src="demo-screenshot.png">
 
+[Try the demo](https://no-gravity.github.io/0g-typeahead/demo.html)
