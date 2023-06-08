@@ -1,9 +1,9 @@
 /* =============================================================
  * 0g-typeahead.js v1.0
- * http://www.gibney.de/0g-typeahead
  * =============================================================
  * Based on bootstrap-typeahead.js, Copyright 2012 Twitter, Inc.
  * Continued in 2019, Copyright Marek Gibney
+ * https://www.gibney.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
